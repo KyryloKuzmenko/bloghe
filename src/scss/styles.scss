@@ -1,18 +1,44 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './cover.scss';
+@import './article.scss';
+@import './monetization.scss';
+@import './gems.scss';
+@import './developers.scss';
+@import './category.scss';
+@import './reports.scss';
+@import './footer.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F6F6F6;
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #191c25;
+  background-color: #CFCFCF;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+
+section[id] {
+  scroll-margin-top: 60px;
+}
+
